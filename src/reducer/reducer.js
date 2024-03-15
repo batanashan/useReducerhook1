@@ -1,0 +1,15 @@
+export const appReducer = (state,action)=>{
+switch(action.type){
+    case 'NAME_UPDATE':
+        return {
+            ...state,
+            name:action.payload
+        }
+        case 'LOC_UPDATE':
+            return {
+                ...state,
+                loc:action.payload
+            }
+}
+return state;
+}
